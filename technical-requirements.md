@@ -1,0 +1,1 @@
+Once you have instructor approval, break your MVP user stories down into technical requirements. Save these in a technical-requirements.md file in your repo.
