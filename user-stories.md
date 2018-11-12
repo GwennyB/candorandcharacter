@@ -1,14 +1,10 @@
-
-
-
-
 MVP***********************************************************************************************
 
 SPLASH PAGE
 As a user, I want a splash page that welcomes me to the website.
-As a user, I want a, "make it pretty," (Scott's Voice) styled D&D themed splash page.
+As a user, I want a styled D&D themed splash page.
 As a user, I want Candor and Character center on the page above the navigation bar.
-As a user, I want navigation bar on the splash page and on all pages.
+As a user, I want navigation bar on all pages.
 As a developer, I want to divide the main elements into three horizontally aligned sections.
 As a user, I want to see the character sheet interface in the center section of the main.
 As a user, I want to have previous sessions stored for display.
@@ -40,6 +36,3 @@ CHARACTER SHEET PAGE
 As a user, I want to be able to print my results of my character sheet.
 As a user, I want to fill out the entire character sheet.
 As a user, I want to have random bonuses for my character.
-
-
-
