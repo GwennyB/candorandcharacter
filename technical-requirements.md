@@ -1,27 +1,31 @@
 ALL PAGES******************************************************
-Website shall include hmtl pages for splash, character, about us, and links page.
+Website shall include hmtl pages for splash, new character, about us, and links page.
 Website shall rely on a common css file for thematic styling.
-All pages shall have the same header (Candor & Character).
-All pages shall have the same nav bar.
-All pages shall have the same footer. Limited to basic copyrigth informaton.
+All pages shall have the same header including the site title (Candor & Character).
+All pages shall have the same nav bar with links to all included html pages.
+All pages shall have the same footer containing only basic copyright information.
 
 SPLASH**********************************************************
-Splash page shall include a create new character button.
-Splash page shall display a list of five previoulsy created characters.
-For new user, the list shall be prepopulated of samples.
-As new characters are created, new characters will replace old characters.
-Splash page element will display as inline-block by 3 sections.
-Splash page left and right elements shall be reserved for thematic art.
+Splash page shall include a 'create new character' button that links to the 'new character' page.
+Splash page shall display a list of four previously created characters.
+For new user, the list of characters shall be prepopulated with sample results.
+As each new character is created, it shall replace the top-most character on the list.
+Splash page 'main' element will be divided into 3 inline-block sections.
+Splash page left and right elements shall contain only thematic art.
 
-CHARACTER SHEET**************************************************
-Shall display the Wizards of the Coast (WOTC) character sheet.
-Shall force user through the definded functional flow.
-All sections shall be blurred.
-The next section in the functaional flow shall include a visual indicator and event listener to initiate the quiz for that section.
-Upon quiz submit, the applicable section shall be populated with user input and all blocking elements shall be removed. And the next visual indicator shall move to the next section.
+NEW CHARACTER SHEET**************************************************
+The page shall display the Wizards of the Coast (WOTC) character sheet.
+The page shall force user through the intended functional flow.
+All sections of the character sheet shall initially be blurred.
+Each section of the character sheet shall present a quiz for the user to complete.
+The next section in the intended functional flow shall include a visual indicator with event listener to initiate the quiz for that section.
+The results of the each section's quiz shall be converted to suitably entertaining outputs in the character sheet.
+Upon quiz submit, the applicable section shall be populated with processed results, all blocking elements shall be removed, and the next section in the intended functional flow shall display the visual indicator with event listener.
 
 ABOUT ME PAGE****************************************************
-Shall include a introduction to each team member. 
-Shall included the purpose of the webpage.
+The page shall include a introduction to each team member. 
+The page shall included the purpose of the webpage.
 
-LINKS PAGE******************************************************* Shall include esternal links from where content was used. And narrative credit where needed. Shall have links to D&D themes borrowed. 
+LINKS PAGE******************************************************* 
+The page shall include external links to sources for borrowed or reproduced content and narrative credit where needed. 
+The page shall have links to D&D themed sites. 
