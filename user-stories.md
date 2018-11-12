@@ -4,6 +4,28 @@ What they want that feature to do
 Why they want it
 If you want a feature in the app, you MUST have at least one user story (preferably more, if multiple users want it) that requires it. No exceptions.
 
+***SPLASH PAGE
+As a user, I want a splash page that welcomes me to the website.
+As a user, I want a, "make it pretty," (Scott's Voice) styled D&D themed splash page.
+As a user, I want Candor and Character center on the page above the navigation bar.
+As a user, I want navigation bar on splash page.
+As a developer, I want to divide the main elements divided up in three sections.
+As a user, I want to see the character sheet interface in the center section of the main.
+As a user, I want previous sessions stored for display.
+As a user, I want to a large create new character button.
+As a developer, I want to show the users relevant art right left asides.
+As a developer, I want the footer to contain basic copyright content. 
+As a user, I want subsequent content to be on the character
+
+***CHARACTER SHEET PAGE
+As a user, I want to use the wizards of the coast standard character sheet format.
+As a user, I want to respond to a series of questions to determine my character.
+As a developer, to divide the character sheet by three main sections.
+As a developer, create a first main section that determines character race, name, etc.
+As a developer create the second main section is character attributes.
+As a developer, create the third section for battles states.
+As a developer, we want to align user interaction with intended functional flow.
+ 
 
 
 MVP
