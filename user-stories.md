@@ -1,9 +1,3 @@
-Write user stories for each possible role. User stories follow the format of: As a ___, I want ___ so that ___. Remember, user stories tell...
-Who needs a feature (and a brief descriptor of their role/relationship to the app)
-What they want that feature to do
-Why they want it
-If you want a feature in the app, you MUST have at least one user story (preferably more, if multiple users want it) that requires it. No exceptions.
-
 ***SPLASH PAGE
 As a user, I want a splash page that welcomes me to the website.
 As a user, I want a, "make it pretty," (Scott's Voice) styled D&D themed splash page.
@@ -25,8 +19,16 @@ As a developer, create a first main section that determines character race, name
 As a developer create the second main section is character attributes.
 As a developer, create the third section for battles states.
 As a developer, we want to align user interaction with intended functional flow.
- 
+As a user, I want to be able to print my results of my character sheet.
+As a user, I want to fill out the entire character sheet.
 
+***ABOUT ME PAGE
+As a developer, I want to introduce the development team. 
+As a developer, I want to explain the purpose of the webpage
+
+***LINKS PAGE
+As a developer, I want to give credit to used content.
+As a user, I want links to relevant content displayed on the website.
 
 MVP
 Now for the hard part. Take your user stories and prioritize.
@@ -37,7 +39,7 @@ What absolutely has to be part of your app for it to ship? (Another way to think
 STRETCH GOALS
 The remaining user stories are your stretch goals. In the user-stories.md file, move them into a "Stretch Goals" section. Then, list them in order from easiest to implement (at the top) to hardest to implement (at the bottom). If you get your MVP done and still have time, you'll tackle the stretch goals.
 
-
+As a deve
 
 
 
