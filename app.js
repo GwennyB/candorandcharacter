@@ -6,6 +6,7 @@ function Character() {
   this.quizOne = []; // player name, character name, race, alignment (receive from quiz 1)
   this.quizTwo = []; // strength, dexterity, constitution, intelligence, wisdom, charisma (receive from quiz 2)
   this.quizThree = []; // armor class, initiative, speed, hit points (receive from quiz 3)
+  this.renderURL = 'http://gwennyb.github.io/candorandcharacter/existingcharacter.html?name=' + this.quizOne[0];
 
   if (allCharacters.length>3) {
     allCharacters = allCharacters.splice(0,1).push(this);
@@ -33,3 +34,4 @@ Character.prototype.renderCharacter = function() { // this will come from query 
   // render this.quizTwo[i]
   // render this.quizThree[i]
 };
+
