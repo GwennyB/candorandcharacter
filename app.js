@@ -47,3 +47,4 @@ Character.prototype.renderCharacter = function() { // this will come from query 
   }
 };
 
+
