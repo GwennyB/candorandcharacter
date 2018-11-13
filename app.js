@@ -1,19 +1,23 @@
 'use strict';
 
+var allCharacters = [];
 // TASK CARD: build Character object constructor function #18
 function Character() {
   this.quizOne = []; // player name, character name, race, alignment (receive from quiz 1)
   this.quizTwo = []; // strength, dexterity, constitution, intelligence, wisdom, charisma (receive from quiz 2)
   this.quizThree = []; // armor class, initiative, speed, hit points (receive from quiz 3)
+
+  if (allCharacters.length>3) {
+    allCharacters = allCharacters.splice(0,1).push(this);
+  } else {
+    allCharacters.push(this);
+  }
 }
 
 // TASK CARD: build Character object constructor function #18
 Character.prototype.sendToLocalStorage = function() {
-  var storedCharacters = this.getFromLocalStorage(); // this is the decoded array of 4 characters that was already in LS
-  storedCharacters.splice(0,1); // delete first element (oldest character)
-  storedCharacters.push(this);  // add newest character to end of array
-  var charJSON = JSON.stringify(this); // encode updated characters list
-  localStorage.setItem('storedCharacters',charJSON); // send updated characters list to LS
+  var charJSON = JSON.stringify(allCharacters); // encode updated characters list
+  localStorage.setItem('allCharacters',charJSON); // send updated characters list to LS
 };
 
 // TASK CARD: build Character object constructor function #18
@@ -23,8 +27,9 @@ Character.prototype.getFromLocalStorage = function() {
 };
 
 // TASK CARD: build Character object constructor function #18
-Character.prototype.populateCharacter = function() {
-  // event handler for characters list on Splash - requires ID for target element (held for TASK CARD: Create character list #15)
-  // send character selection to LS
-  // load page 'existingcharacter.html', which launches 'existingcharacter.js'
+// load page 'existingcharacter.html', which launches 'existingcharacter.js' and renders with this function
+Character.prototype.renderCharacter = function() { // this will come from query string ('existingcharacter.js') or 'new character' ('newcharacter.js')
+  // render this.quizOne[i]
+  // render this.quizTwo[i]
+  // render this.quizThree[i]
 };
