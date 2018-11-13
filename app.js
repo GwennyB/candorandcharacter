@@ -34,4 +34,3 @@ Character.prototype.renderCharacter = function() { // this will come from query 
   // render this.quizTwo[i]
   // render this.quizThree[i]
 };
-
