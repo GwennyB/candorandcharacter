@@ -31,6 +31,20 @@ Character.prototype.getFromLocalStorage = function() {
 // load page 'existingcharacter.html', which launches 'existingcharacter.js' and renders with this function
 Character.prototype.renderCharacter = function() { // this will come from query string ('existingcharacter.js') or 'new character' ('newcharacter.js')
   // render this.quizOne[i]
+  var quizOneAnswers = document.getElementById('quizone');
+  for (var outputOne in this.quizOne) {
+    quizOneAnswers.childNodes[1+2*outputOne].textContent = this.quizOne[outputOne];
+  }
   // render this.quizTwo[i]
+  var quizTwoAnswers = document.getElementById('quiztwo');
+  for (var outputTwo in this.quizTwo) {
+    quizTwoAnswers.childNodes[1+2*outputTwo].textContent = this.quizTwo[outputTwo];
+  }
   // render this.quizThree[i]
+  var quizThreeAnswers = document.getElementById('quizthree');
+  for (var outputThree in this.quizThree) {
+    quizThreeAnswers.childNodes[1+2*outputThree].textContent = this.quizThree[outputThree];
+  }
 };
+
+
