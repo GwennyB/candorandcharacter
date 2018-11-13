@@ -1,3 +1,59 @@
+
+header, footer {
+  color:white;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(1, 46, 4);
+  /* background-color: rgb(53, 29, 10); */
+  left: 0;
+  }
+  
+  header {
+        top: 0;
+    height: 100px;
+    /* background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/310cffff-e634-4de6-b97b-c007a2c2a5b8/d6f5h5m-182d68d6-b476-4a1a-ac50-c206c23fbe1b.jpg) */
+      }
+      #header-left {
+        font-size: 24pt;
+        width: 100px;
+        float: left;
+    }
+    
+    #header-middle {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #header-right {
+        float: right;
+        width: 300px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+
+  footer{
+    bottom: 0;
+    height: 100px;
+  }
+
+  body {
+    /* position: relative; */
+    background-color: black;
+        background-image: url("https://pre00.deviantart.net/2f79/th/pre/i/2014/188/7/0/black_dragon_tempest_by_peterprime-d7pom10.png");
+    /* background-image: url("/img/Background.jpeg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-image: url("https://pre00.deviantart.net/2f79/th/pre/i/2014/188/7/0/black_dragon_tempest_by_peterprime-d7pom10.png") */
+  }
+  
+ /* section{
+    position: relative;
+    height: 1500px;
+  }*/
+
 body {
     text-align: center;
 }
@@ -11,3 +67,4 @@ body {
     width: 480px;
     text-align: center;
 }
+
