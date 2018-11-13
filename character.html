@@ -5,23 +5,59 @@
     <link rel="stylesheet" href="text/css" media="screen" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
-    <script src="app.js"></script>
   </head>
     <body>
         <img src="d&dimages\wotc.jpg" alt="Wizards of the Coast Character Sheet">
       <header>
         Candor & Character
       </header>
-      <main>
+      <main id = "buttonContainer">
         <nav>
           <a href="index.html">HOME</a>
           <a href="character.html">NEW CHARACTER</a>
           <a href="links.html">LINKS</a>
           <a href="aboutus.html">ABOUT US</a>
         </nav>
+
+        <div class="formup" id="myForm">
+          <form action="character.html" class="formCcontainer">
+  
+            <h1>Answer These Questions</h1>
+
+            <label id = qu1>
+            <input type="text" placeholder="Question" name="Question1" required>
+            </label>
+
+            <label id = qu2>
+            <input type="text" placeholder="Question" name="Question2" required>
+            </label>
+
+            <label id = qu3>
+            <input type="text" placeholder="Question" name="Question3" required>
+            </label>
+
+            <label id = qu4>
+              <input type="text" placeholder="Question" name="Question4" required>
+              </label>
+
+            <label id = qu5>
+              <input type="text" placeholder="Question" name="Question5" required>
+            </label>
+
+            <label id = qu6>
+              <input type="text" placeholder="Question" name="Question6" required>
+            </label>
+
+            <button type="submit" class="btn" id = "submitQuiz1">Submit Test</button>
+      
+
+          </form>
+        </div>
       </main>
       <footer>
         <img src="d&dimages\characterlineup.jpg" alt="Line Up of Dungeons And Dragons">
       </footer>
+      <script src="app.js"></script>
+      <script src="quiz.js"></script>
     </body>
 </html>
