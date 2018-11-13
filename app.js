@@ -1,12 +1,14 @@
 'use strict';
 
 var allCharacters = [];
+
+
 // TASK CARD: build Character object constructor function #18
 function Character() {
   this.quizOne = []; // player name, character name, race, alignment (receive from quiz 1)
   this.quizTwo = []; // strength, dexterity, constitution, intelligence, wisdom, charisma (receive from quiz 2)
   this.quizThree = []; // armor class, initiative, speed, hit points (receive from quiz 3)
-  this.renderURL = 'http://gwennyb.github.io/candorandcharacter/existingcharacter.html?name=' + this.quizOne[0];
+  this.renderURL = '';
 
   if (allCharacters.length>3) {
     allCharacters = allCharacters.splice(0,1).push(this);
@@ -18,12 +20,12 @@ function Character() {
 // TASK CARD: build Character object constructor function #18
 Character.prototype.sendToLocalStorage = function() {
   var charJSON = JSON.stringify(allCharacters); // encode updated characters list
-  localStorage.setItem('allCharacters',charJSON); // send updated characters list to LS
+  localStorage.setItem('storedCharacters',charJSON); // send updated characters list to LS
 };
 
 // TASK CARD: build Character object constructor function #18
 Character.prototype.getFromLocalStorage = function() {
-  var storedCharacters = localStorage.getItem('storedCharacters') || ['seeTaskCard17']; // get array of 4 chars from LS, or use hard-coded chars
+  var storedCharacters = localStorage.getItem('storedCharacters'); // || ['seeTaskCard17']; // get array of 4 chars from LS, or use hard-coded chars
   return JSON.parse(storedCharacters);
 };
 
@@ -48,3 +50,4 @@ Character.prototype.renderCharacter = function() { // this will come from query 
 };
 
 
+console.log('CL3',document.getElementById('characterlist'));
