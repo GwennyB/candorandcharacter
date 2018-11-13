@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 //build constructor for quiz objects #20
 function Quiz([], [], startButtonID, divID, modalID) {
@@ -13,8 +13,6 @@ Quiz.prototype.renderToken = function() {
   var startB = document.getElementById(this.startButtonID);
   startB.addEventListener('click', function renderQuiz() {
     var modal = document.getElementById(this.modalID);
-  
-
   });
 
 };
