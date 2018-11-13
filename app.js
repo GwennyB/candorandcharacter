@@ -18,15 +18,13 @@ Character.prototype.sendToLocalStorage = function() {
 
 // TASK CARD: build Character object constructor function #18
 Character.prototype.getFromLocalStorage = function() {
-  var storedCharacters = localStorage.getItem('storedCharacters') || [seeTaskCard17]; // get array of 4 chars from LS, or use hard-coded chars
+  var storedCharacters = localStorage.getItem('storedCharacters') || ['seeTaskCard17']; // get array of 4 chars from LS, or use hard-coded chars
   return JSON.parse(storedCharacters);
 };
 
 // TASK CARD: build Character object constructor function #18
 Character.prototype.populateCharacter = function() {
-  // load page 'character.html'
-  // change z-index of blurs and tokens to -1
-  // populate section 1
-  // populate section 2
-  // populate section 3
+  // event handler for characters list on Splash - requires ID for target element (held for TASK CARD: Create character list #15)
+  // send character selection to LS
+  // load page 'existingcharacter.html', which launches 'existingcharacter.js'
 };
