@@ -1,3 +1,4 @@
+
 header, footer {
   color:white;
   position: fixed;
@@ -52,3 +53,18 @@ header, footer {
     position: relative;
     height: 1500px;
   }*/
+
+body {
+    text-align: center;
+}
+
+#mainimage {
+    width: 480px;
+    text-align: center;
+}
+
+#footerimage {
+    width: 480px;
+    text-align: center;
+}
+
