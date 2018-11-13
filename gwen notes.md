@@ -22,3 +22,27 @@ Styling
 initial characters: just 1 to start (MVP); maybe all of ours pre-populated (as stretch)
 
 
+INTERACTIVE FLOW:
+open index.html
+  event listeners for each of 4 previously created characters
+  options:
+    nav links - to other pages (includes 'new char')
+    load existing character
+      query string in url to load correct character (can use just HTML link)
+      go to 'existingcharacter.html', run separate JS
+        get LS
+        render
+    create new character
+      blurs
+      tokens
+      event listener on Q1 token
+      handler: launch quiz
+        submit:
+          hide blur
+          hide Q1 token
+          calculate outputs
+          populate outputs
+          show Q2 token (event listener can already be active if token is inaccessible)
+          repeat for Q2, Q3
+
+          
