@@ -1,0 +1,19 @@
+main {
+    padding-top: 65px;
+}
+
+.pageLinks {
+    text-decoration: underline;
+    color: thistle;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.linkContent {
+    color: #FFFFFF;
+    text-decoration: none;
+    color: thistle;
+    font-size: 15px;
+    font-weight: 200;
+}
