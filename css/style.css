@@ -4,37 +4,27 @@ header, footer {
     position: fixed;
     width: 100%;
     background-color: rgb(59, 56, 241);
-    /* background-color: rgb(53, 29, 10); */
     left: 0;
-  }
+}
   
 header {
     top: 0;
     height: 75px;
     z-index: +1;
-    /* background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/310cffff-e634-4de6-b97b-c007a2c2a5b8/d6f5h5m-182d68d6-b476-4a1a-ac50-c206c23fbe1b.jpg) */
-    }
+}
 
 footer{
     bottom: 0;
     height: 75px;
- }
+}
 
 body {
-    /* position: relative; */
     background-color: black;
     background-image: url("https://pre00.deviantart.net/2f79/th/pre/i/2014/188/7/0/black_dragon_tempest_by_peterprime-d7pom10.png");
-    /* background-image: url("/img/Background.jpeg"); */
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    /* background-image: url("https://pre00.deviantart.net/2f79/th/pre/i/2014/188/7/0/black_dragon_tempest_by_peterprime-d7pom10.png") */
-  }
-  
- /* section{
-    position: relative;
-    height: 1500px;
-  }*/
+}
 
 body {
     text-align: center;
@@ -69,6 +59,12 @@ body {
     padding-left: 40px;
     padding-right: 40px;
     color: black;
+}
+
+#existCharacter {
+    padding-left: 40px;
+    padding-right: 40px;
+    color: black;  
 }
 
 #links {
