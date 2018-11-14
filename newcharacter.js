@@ -15,6 +15,7 @@ function Quiz (quizNum) {
 // quiz prototype functions:
 // create, place, and activate token
 Quiz.prototype.makeToken = function() {
+  this.blurbox.style.zIndex = '75';
   this.token.style.zIndex = '100';
   this.token.addEventListener('click',this.renderQuiz);
 };
@@ -24,27 +25,39 @@ Quiz.prototype.renderQuiz = function(event) {
   event.preventDefault();
   // change display on quiz form and token
   this.token.style.display = '-100';
-  this.
-  // make sure form has button.type = 'submit'
+  this.quizForm.style.display = '100';
 };
 
 // quiz submit handler: process inputs into outputs, push to character
 Quiz.prototype.handleSubmit = function(event) {
   // push quiz results to this.outputs
+  this.outputs = ['output','output','output','output'];
   // call 'flipVisibility'
+  this.flipVisibility();
 };
 
 // hide token, quiz, and blur box
 Quiz.prototype.flipVisibility = function() {
   // change display on quiz form, blur box
+  this.blurbox.style.zIndex = '-100';
+  this.quizForm.style.display = '-100';
   // call allCharacters[4].renderCharacter
+};
+
+Quiz.prototype.renderCharacter = function() { // this will come from query string ('existingcharacter.js') or 'new character' ('newcharacter.js')
+  // render quiz outputs
+  for (var outputs in this.outputs) {
+    this.blurbox.childNodes[1+2*outputs].textContent = this.outputs;
+  }
+
   // move to next quiz
   if (this.quizNum < 4) {
     quizzes[this.quizNum+1].makeToken();
   } else {
     alert('Congratulations... you made a character!');
-  };
-
+  }
+};
+  
 
 // PAGE EXECUTION
 // page must load with all blur divs forward, all quizzes back, quiz tokens back
@@ -56,28 +69,21 @@ allCharacters.push(new Character()); // populate quiz results directly to allCha
 // if allCharacters is full, delete 1st element from allCharacters after successfully creating a new character
 
 // hold quiz objects as they're built
-var quizzes = [0];
+var quizzes = [];
+
+var quizQuestions = [['q1','q2','q3','q4'],['q1','q2','q3','q4','q5','q6'],['q1','q2','q3','q4']];
+var quizBlurbox = ['quizone','quiztwo','quizthree'];
+var quizToken = [9,13,9]; // this is the childNode number for the token
+var quizForm = [11,15,11]; // this is the childNode number for the form
 
 // create quiz objects
-quizzes.push(new Quiz(1)); // quizNum = 1
-quizzes.push(new Quiz(2)); // quizNum = 2
-quizzes.push(new Quiz(3)); // quizNum = 3
-
-quizzes[1].questions.push(['q1','q2','q3','q4']);
-quizzes[2].questions.push(['q1','q2','q3','q4','q5','q6']);
-quizzes[3].questions.push(['q1','q2','q3','q4']);
-
-quizzes[1].token.push(document.getElementById('quizone').childNodes[11]);
-quizzes[2].token.push(document.getElementById('quiztwo').childNodes[15]);
-quizzes[3].token.push(document.getElementById('quizthree').childNodes[11]);
-
-quizzes[1].blurbox.push(document.getElementById('quizone'));
-quizzes[2].blurbox.push(document.getElementById('quiztwo'));
-quizzes[3].blurbox.push(document.getElementById('quizthree'));
-
-quizzes[1].quizForm.push(document.getElementById('quizone').childNodes[13]);
-quizzes[2].quizForm.push(document.getElementById('quiztwo').childNodes[17]);
-quizzes[3].quizForm.push(document.getElementById('quizthree').childNodes[13]);
+for (var quizNum = 0; Num < 3; Num++) {
+  quizzes.push(new Quiz(quizNum));
+  quizzes[quizNum].questions.push(quizQuestions[quizNum]);
+  quizzes[quizNum].blurbox.push(document.getElementById(quizBlurbox[quizNum]));
+  quizzes[quizNum].token.push(quizzes[quizNum].blurbox.childNodes[quizToken]);
+  quizzes[quizNum].quizForm.push(quizzes[quizNum].blurbox.childNodes[quizForm]);
+}
 
 // PROTO: show and activate listener on 1st quiz
 quizzes[0].makeToken();
