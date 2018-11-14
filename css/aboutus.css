@@ -1,0 +1,15 @@
+main {
+    padding-top: 100px;
+}
+
+h2 {
+    font-size: 34px;
+    text-decoration: underline;
+    color: thistle;
+    padding: 15px;
+}
+
+p {
+    color: thistle;
+    font-size: 18px;
+}
