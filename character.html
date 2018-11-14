@@ -4,24 +4,59 @@
     <title>Candor & Character</title>
     <link rel="stylesheet" href="text/css" media="screen" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
-    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/character.css" />
   </head>
     <body>
-        <img src="http://media.wizards.com/2015/images/dnd/resources/ADV_ChSheet.jpg" id= wotc alt="Wizards of the Coast Character Sheet">
       <header>
         <h1>CANDOR & CHARACTER</h1>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="character.html">NEW CHARACTER</a>
-            <a href="links.html">LINKS</a>
-            <a href="aboutus.html">ABOUT US</a>
+        <nav id ="navLinks">
+          <a href="index.html" id="home">HOME</a>
+          <a href="character.html" id="newCharacter">NEW CHARACTER</a>
+          <a href="links.html" id="links">LINKS</a>
+          <a href="aboutus.html" id="aboutUs">ABOUT US</a>
         </nav>
       </header>
       <main>
+          <div id="wotcdiv">
+            <img src="https://9bitmedia.files.wordpress.com/2014/07/9bit-vertical-page-1.png" id= "wotc" alt="Wizards of the Coast Character Sheet">
+          </div>
+          <div class="formup" id="myForm">
+            <form action="character.html" class="formCcontainer">
+    
+              <h2>Answer These Questions</h2>
+  
+              <label id = qu1>
+              <input type="text" placeholder="Question" name="Question1" required>
+              </label>
+  
+              <label id = qu2>
+              <input type="text" placeholder="Question" name="Question2" required>
+              </label>
+  
+              <label id = qu3>
+              <input type="text" placeholder="Question" name="Question3" required>
+              </label>
+  
+              <label id = qu4>
+                <input type="text" placeholder="Question" name="Question4" required>
+                </label>
+  
+              <label id = qu5>
+                <input type="text" placeholder="Question" name="Question5" required>
+              </label>
+  
+              <label id = qu6>
+                <input type="text" placeholder="Question" name="Question6" required>
+              </label>
+  
+              <button type="submit" class="btn" id = "submitQuiz1">Submit Test</button>
+        
+            </form>
+          </div>
       </main>
       <footer>
-            <!-- <img src="d&dimages\characterlineup.jpg" id= footerimage alt="Line Up of Dungeons And Dragons"> -->
-        </footer>
+      </footer>
     </body>
+    <script src="app.js"></script>
+    <script src="quiz.js"></script>
 </html>
