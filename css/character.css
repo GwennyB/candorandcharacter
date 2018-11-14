@@ -1,0 +1,20 @@
+#quiz-one{
+    background-color: aliceblue;
+    height: 215px;
+    margin-bottom: 50px;
+    width: 400px;
+}
+
+#quiz-two{
+    background-color: aliceblue;
+    height: 400px;
+    margin-bottom: 50px;
+    width: 400px;
+    float: right;
+}
+
+#quiz-three{
+    background-color: aliceblue;
+    height: 215px;
+    width: 400px;
+}

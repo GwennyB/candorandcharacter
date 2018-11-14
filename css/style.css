@@ -67,4 +67,7 @@ body {
     width: 480px;
     text-align: center;
 }
-
+#buttonOne{
+    position: absolute;
+    right: 800px;
+}
