@@ -1,15 +1,18 @@
+'use strict';
+
 // create new Character
 var newChar = new Character();
 
-// read query string
-var whichChar = window.location.search; // splice out leading chars from return string
-
 // pull/decode LS
-var allCharacters = newChar.getFromLocalStorage();
+var allCharacters = getFromLocalStorage() || []; // returns either LS or empty array
+
+// read query string
+var whichChar = window.location.search.split('?name=')[1];
+
 
 // find correct character from query string
 for (var i = 0; i<4; i++) {
-  if (allCharacters[i].name === whichChar) {
+  if (allCharacters[i].quizOne[1] === whichChar) {
     whichChar = i;
     break;
   }
