@@ -8,3 +8,9 @@
     position: absolute;
     text-align: center;
 }
+
+.formup {
+    position: static;
+    top: 500px;
+
+}

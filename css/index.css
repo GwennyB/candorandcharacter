@@ -1,6 +1,6 @@
 #button {
     position: absolute;
-    top: 365px;
+    top: 420px;
     right: 400px;
     left: 400px;
 }
@@ -10,9 +10,9 @@
     top: 147px;
     right: 444px;
     padding-top: 25px;
-    padding-right: 63px;
+    padding-right: 100px;
     padding-bottom: 58px;
-    padding-left: 118px;
+    padding-left: 75px;
     background-color: rgb(29, 79, 240);
     opacity: 0.8;
     font-weight: bolder;
