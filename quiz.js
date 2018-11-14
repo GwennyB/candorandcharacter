@@ -1,5 +1,5 @@
 'use strict';
-////var newCharacter = new Character();
+//var newCharacter = new Character();
 
 var quizOne = [];
 var quizTwo = [];
