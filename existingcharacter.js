@@ -7,7 +7,7 @@ var newChar = new Character();
 var allCharacters = getFromLocalStorage() || []; // returns either LS or empty array
 
 // read query string
-var whichChar = window.location.search.split('?name=')[1];
+var whichChar = window.location.search.split('?')[1];
 
 
 // find correct character from query string
