@@ -24,5 +24,3 @@ newChar.quizTwo = allCharacters[whichChar].quizTwo; // extra conditioning needed
 newChar.quizThree = allCharacters[whichChar].quizThree; // extra conditioning needed?
 
 newChar.renderCharacter();
-
-
