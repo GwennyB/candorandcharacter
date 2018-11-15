@@ -30,112 +30,97 @@
     height: 240px;
     left: 500px;
     width: 340px;
-}
+  }
 body {
     background-image: none;
+  }
+  
+#q1p1 {
+  position: absolute;
+  top: 25px;
+  left: 1000px;  
+}
+  
+#q1p2 {
+    position: absolute;
+    top: 55px;
+    left: 124px;
+  }
+
+#q1p3 {
+  position: absolute;
+  top: 25px;
+  left: 777px;    
 }
 
+#q1p4 {
+  position: absolute;
+  top: 80px;
+  left: 777px;  
+}
 
-#q1p1 {
-    position: absolute;
-    top: 117px;
-    left: 185px;
-  }
-  
-  #q1p2 {
-    position: absolute;
-    top: 90px;
-    left: 995px;  
-  }
-  
-  #q1p3 {
-    position: absolute;
-    top: 90px;
-    left: 772px;    
-  }
-  
-  #q1p4 {
-    position: absolute;
-    top: 147px;
-    left: 772px;  
-  }
-  
-  #q2p1 {
-    position: absolute;
-    top: 150px;
-    left: 63px;  
-  }
-  
-  #q2p2 {
-    position: absolute;
-    top: 315px; 
-    left: 63px;  
-  }
-  
-  #q2p3 {
-    position: absolute;
-    top: 485px;
-    left: 63px;   
-  }
-  
-  #q2p4 {
-    position: absolute;
-    top: 650px;
-    left: 63px;   
-  }
-  
-  #q2p5 {
-    position: absolute;
-    top: 815px;
-    left: 63px;   
-  }
-  
-  #q2p6 {
-    position: absolute;
-    top: 985px;
-    left: 63px;
-  }
-  
-  #q3p1 {
-    position: absolute;
-    top: 80px;
-    left: 62px;  
-  }
-  
-  #q3p2 {
-    position: absolute;
-    top: 80px;  
-    left: 196px;
-  }
-  
-  #q3p3 {
-    position: absolute;
-    top: 80px;  
-    left: 320px;
-  }
-  
-  #q3p4 {
-    position: absolute;
-    top: 230px; 
-    left: 180px; 
-  }
+#q2p1 {
+  position: absolute;
+  top: 30px;
+  left: 75px;  
+}
 
-/* <div id="quizone">
-<p style="position: absolute; top: 70px;left: 124px;"></p>
-<p style="position: absolute; top: 35px;left: 1000px;"></p>
-<p style="position: absolute; top: 35px;left: 777px;"></p>
-<p style="position: absolute; top: 89px;left: 777px;"></p>
-</div>
-<div id="quiztwo">
-<p style="position: absolute; top: 34px; left: 82px;"></p>
-<p style="position: absolute; top: 200px; left: 82px;"></p>
-<p style="position: absolute; top: 365px; left: 82px;"></p>
-<p style="position: absolute; top: 535px; left: 82px;"></p>
-<p style="position: absolute; top: 700px; left: 82px;"></p>
-<p style="position: absolute; top: 865px; left: 82px;"></p>
-</div>
-<div id="quizthree">
-<p style="position: absolute;top: 50px;left: 112px;"></p>
-<p style="position: absolute;top: 50px;left: 252px;"></p>
-<p style="position: absolute;top: 50px;left: 380px;"></p>
-<p style="position: absolute;top: 200px;left: 247px;"></p> */
+#q2p2 {
+  position: absolute;
+  top: 195px; 
+  left: 75px;  
+}
+
+#q2p3 {
+  position: absolute;
+  top: 360px;
+  left: 75px;   
+}
+
+#q2p4 {
+  position: absolute;
+  top: 530px;
+  left: 75px;   
+}
+
+#q2p5 {
+  position: absolute;
+  top: 697px;
+  left: 75px;   
+}
+
+#q2p6 {
+  position: absolute;
+  top: 863px;
+  left: 75px;
+}
+
+#q3p1 {
+  position: absolute;
+  top: 40px;
+  left: 115px;  
+}
+
+#q3p2 {
+  position: absolute;
+  top: 50px;  
+  left: 245px;
+}
+
+#q3p3 {
+  position: absolute;
+  top: 45px;  
+  left: 375px;
+}
+
+#q3p4 {
+  position: absolute;
+  top: 190px; 
+  left: 247px; 
+}
+
+#quizone p, #quiztwo p, #quizthree p {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
