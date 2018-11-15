@@ -4,18 +4,19 @@ header, footer {
     width: 100%;
     background-color: rgb(59, 56, 241);
     left: 0;
-    height: 70px;
+    height: 75px;
 }
-  
+
 header {
+    height: 100px;
     top: 0;
     z-index: 100;
 }
 
 header h1 {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bolder;
-    padding: 10px;
+    padding: 10px 0px 0px 0px;
 }
 
 footer{
@@ -33,16 +34,20 @@ body {
 }
 
 #mainimage {
-    position: relative;
-    top: 150px;
-    width: 600px;
+    margin-top: 170px;
+    /* position: relative;
+    top: 150px; */
+    width: 600px; 
     text-align: center;
 }
 
 #footerimage {
-    position: relative;
-    top: 345px;
+    display: inline-block;
     width: 600px;
+    /* margin-top: 0px; */
+    /* position: relative;
+    top: 345px;
+    width: 600px; */
     text-align: center;
 }
 
@@ -79,4 +84,16 @@ body {
     padding-left: 40px;
     padding-right: 40px;
     color: black;
+}
+
+nav {
+    padding: 5px 0px 10px 0px;
+}
+
+* {
+    font-family: 'MedievalSharp', cursive;
+}
+
+h1 {
+    font-family: 'MedievalSharp', cursive;
 }

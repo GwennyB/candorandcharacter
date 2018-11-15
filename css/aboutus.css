@@ -1,5 +1,5 @@
 main {
-    padding-top: 65px;
+    padding-top: 150px;
 }
 
 h2 {
@@ -25,4 +25,8 @@ p {
 #andrewContent {
     position: absolute;
     padding-left: 110px;
+}
+
+nav {
+    padding: 15px 0px;
 }
