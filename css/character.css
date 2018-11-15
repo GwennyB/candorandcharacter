@@ -18,8 +18,10 @@
    opacity: .9;
    z-index: 50;
 }
-#quizone img{
+#diceone, #dicetwo, #dicethree {
     z-index: 100;
+    width: 100px;
+    margin-top: 50px;
 }
 
 #quiztwo {
@@ -32,9 +34,6 @@
     opacity: .9;
     z-index: 50;
 }
-#quiztwo img{
-    z-index: 100;
-}
 
 #quizthree {
     position: absolute;
@@ -46,9 +45,7 @@
     opacity: .9;
     z-index: 50;
 }
-#quizthree img{
-    z-index: 100;
-}
+
 body {
     background-image: none;
 }
