@@ -2,10 +2,10 @@
     position: absolute;
     text-align: center;
     width: 1366px;
-    top: 95px;
+    top: 90px;
     left: 75px;
     z-index: 0;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 }
 
 #quizone {
@@ -162,4 +162,12 @@ h1{
 #quizthree input{
     margin-left: 125px;
 
+}
+
+header h1 {
+  margin-bottom: 0px;
+}
+
+nav {
+  padding: 15px 0px;
 }
