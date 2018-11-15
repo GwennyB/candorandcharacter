@@ -26,3 +26,20 @@ p {
     position: absolute;
     padding-left: 110px;
 }
+
+#jasPhoto {
+    position: absolute;
+    left: 0px;
+    top: 400px;
+    width: 100px;
+    height: 100px;
+   
+    padding-left: 5px;
+    padding-right: 0px;
+}
+
+#jasonContent {
+    position: absolute;
+    padding-left: 110px;
+    top: 400px;
+}
