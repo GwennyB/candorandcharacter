@@ -21,40 +21,92 @@
               <a href="aboutus.html" id="aboutUs">ABOUT US</a>
             </nav>
           </header>
-      <main>
-          <div id="wotcdiv">
-            <img src="https://9bitmedia.files.wordpress.com/2014/07/9bit-vertical-page-1.png" id= "wotc" alt="Wizards of the Coast Character Sheet">
-          </div>
-          <div class="formup" id="myForm">
-            <form action="character.html" class="formCcontainer">
-              <h2>
-                Answer These Questions
-              </h2>
-              <label id = "qu1">
-                <input type="text" placeholder="Question" name="Question1" required>
-              </label>
-              <label id = "qu2">
-                <input type="text" placeholder="Question" name="Question2" required>
-              </label>
-              <label id = "qu3">
-                <input type="text" placeholder="Question" name="Question3" required>
-              </label>
-              <label id = "qu4">
-                <input type="text" placeholder="Question" name="Question4" required>
-              </label>
-              <label id = "qu5">
-                <input type="text" placeholder="Question" name="Question5" required>
-              </label>
-              <label id = "qu6">
-                <input type="text" placeholder="Question" name="Question6" required>
-              </label>
-              <button type="submit" class="btn" id = "submitQuiz1">Submit Test</button>
-            </form>
-          </div>
-      </main>
+          <main>
+              <div id="wotcdiv">
+                <img src="https://9bitmedia.files.wordpress.com/2014/07/9bit-vertical-page-1.png" id= "wotc" alt="Wizards of the Coast Character Sheet" width="960px" zIndex='0'>
+                <div id="quizone">
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <img src="http://www.clker.com/cliparts/u/X/u/R/t/1/twenty-sided-dice-md.png" width="50px" alt="quiz 1 launch" width="50px">
+                  <form id="quiz-one">
+                    <h1>Quiz One</h1>
+                    <label>What is your character's name?
+                      <input name="question1" type="text">
+                    </label> <br>
+                    <label>On a scale from 1 to 10 how much do you love pets?
+                      <input name="question2" type="number">
+                    </label> <br>
+                    <label>How many kittens have you kicked in your life?
+                      <input name="question3" type="number">
+                    </label> <br>
+                    <label>What is your name?
+                      <input name="question4" type="text">
+                    </label> <br>
+                    <button type="submit">Who am I?</button>
+                  </form>
+                  </div>
+                <div id="quiztwo">
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <img src="http://www.clker.com/cliparts/u/X/u/R/t/1/twenty-sided-dice-md.png" width="50px" alt="quiz 2 launch" width="50px">
+                  <form id='quiz-two'>
+                    <h1>Quiz Two</h1>
+                    <label>How much can you bench press?
+                      <input name="question1" type="number">
+                    </label><br>
+                    <label>How many times per week do you trip over your own feet?
+                      <input name="question2" type="number">
+                    </label><br>
+                    <label>One a scale from 1 to 10, how much to you love the Bill of Rights?
+                      <input name="question3" type="number">
+                    </label><br>
+                    <label>One a scale from 1 to 10, how much do you enjoy Chuck Norris films?
+                      <input name="question4" type="number">
+                    </label><br>
+                    <label>One a scale from 1 to 10, how much do you agree with the phrase "happy wife, happy life"?
+                      <input name="question5" type="number">
+                    </label><br>
+                    <label>One a scale from 1 to 10, how much swag do you have?
+                      <input name="question6" type="number">
+                    </label><br>
+                    <button type="submit">How do I handle myself?</button>
+                  </form>
+                </div>
+                <div id="quizthree">
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <img src="http://www.clker.com/cliparts/u/X/u/R/t/1/twenty-sided-dice-md.png" width="50px" alt="quiz 3 launch" width="50px">
+                  <form id='quiz-three'>
+                    <h1>Quiz Three</h1>
+                    <label> On a scale from 1 to 10, how much can you stand your mother in law?
+                      <input name="question1" type="text">
+                    </label><br>
+                    <label>How many minutes does it take you to get from work to happy hour?
+                      <input name="question2" type="text">
+                    </label><br>
+                    <label>On a scale from 1 to 10, how much chemistry do Keanu Reeves and Sandra Bullock have?
+                      <input name="question3" type="text">
+                    </label><br>
+                    <label>If you were a hitman, how many jobs could you do before your conscience caught up to you and you were forced to retire?
+                      <input name="question4" type="text">
+                    </label><br>
+                    <button type="submit">How long will I last?</button>
+                  </form>
+                </div>
+              </div>
+              <script src="app.js"></script>
+              <script src="quiz.js"></script>
+              <script src="newcharacter.js"></script>
+            </main>
       <footer>
       </footer>
-      <script src="app.js"></script>
-      <script src="quiz.js"></script>
     </body>
 </html>
