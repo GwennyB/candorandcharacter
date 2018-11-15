@@ -19,22 +19,22 @@ function prepopulate () {
   allCharacters[0].quizOne = ['Gwen', 'Gwen_Character', 'race', 'alignment'];
   allCharacters[0].quizTwo = ['10','10','10','10','10','10'];
   allCharacters[0].quizThree = ['10','10','10','50'];
-  allCharacters[0].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter?' + allCharacters[0].quizOne[1];
+  allCharacters[0].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter.html?' + allCharacters[0].quizOne[1];
   // define Jason's character
   allCharacters[1].quizOne = ['Jason', 'Jason_Character', 'race', 'alignment'];
   allCharacters[1].quizTwo = ['10','10','10','10','10','10'];
   allCharacters[1].quizThree = ['10','10','10','50'];
-  allCharacters[1].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter?' + allCharacters[1].quizOne[1];
+  allCharacters[1].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter.html?' + allCharacters[1].quizOne[1];
   // define Guru's character
   allCharacters[2].quizOne = ['Guru', 'Guru_Character', 'race', 'alignment'];
   allCharacters[2].quizTwo = ['10','10','10','10','10','10'];
   allCharacters[2].quizThree = ['10','10','10','50'];
-  allCharacters[2].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter?' + allCharacters[2].quizOne[1];
+  allCharacters[2].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter.html?' + allCharacters[2].quizOne[1];
   // define Andrew's character
   allCharacters[3].quizOne = ['Andrew', 'Andrew_Character', 'race', 'alignment'];
   allCharacters[3].quizTwo = ['10','10','10','10','10','10'];
   allCharacters[3].quizThree = ['10','10','10','50'];
-  allCharacters[3].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter?' + allCharacters[3].quizOne[1];
+  allCharacters[3].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter.html?' + allCharacters[3].quizOne[1];
 
   allCharacters[0].sendToLocalStorage();
 }
