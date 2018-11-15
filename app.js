@@ -12,6 +12,9 @@ function Character() {
 
 // TASK CARD: build Character object constructor function #18
 Character.prototype.sendToLocalStorage = function() {
+  while(allCharacters.length>4) {
+    allCharacters = allCharacters.slice(1);
+  }
   var charJSON = JSON.stringify(allCharacters); // encode updated characters list
   localStorage.setItem('storedCharacters',charJSON); // send updated characters list to LS
 };
@@ -90,6 +93,8 @@ Quiz.prototype.renderQuiz = function() {
   }
   if (this.quizNum === 2) {
     this.quizOne = quizThreeResults();
+    allCharacters[allCharacters.length-1].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter.html?' + allCharacters[allCharacters.length-1].quizOne[1]; 
+    allCharacters[allCharacters.length-1].sendToLocalStorage();
   }
 };
 

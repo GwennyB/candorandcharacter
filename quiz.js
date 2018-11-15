@@ -5,29 +5,32 @@ function quizOneResults() {
   var quizResults = document.getElementById('quiz-one');
   quizResults.addEventListener('submit', function(event) {
     event.preventDefault();
-    //What is your character's name?
+    //What is your name?
     var quesOne = event.target.question1.value;
     quizOne.push(quesOne);
-    //On a scale from 1 to 10 how much do you love pets?
+    //What is your character's name?
     var quesTwo = event.target.question2.value;
-    if (quesTwo <= 2) quizOne.push('Half Orc');
-    if (quesTwo > 2 && quesTwo <= 4) quizOne.push('Human');
-    if (quesTwo > 4 && quesTwo <= 6) quizOne.push('Dwarf');
-    if (quesTwo > 6 && quesTwo <= 8) quizOne.push('Elf');
-    if (quesTwo > 8 && quesTwo <= 10) quizOne.push('Gnome');
-    //How many kittens have you kicked in your life?
+    quizOne.push(quesTwo);
+    //On a scale from 1 to 10 how much do you love pets?
     var quesThree = event.target.question3.value;
-    if (quesThree > 1) quizOne.push('Chaotic Evil');
-    else quizOne.push('Lawful Good');
-    //What is your name?
+    if (quesThree <= 2) quizOne.push('Half Orc');
+    if (quesThree > 2 && quesThree <= 4) quizOne.push('Human');
+    if (quesThree > 4 && quesThree <= 6) quizOne.push('Dwarf');
+    if (quesThree > 6 && quesThree <= 8) quizOne.push('Elf');
+    if (quesThree > 8 && quesThree <= 10) quizOne.push('Gnome');
+    //How many kittens have you kicked in your life?
     var quesFour = event.target.question4.value;
-    quizOne.push(quesFour);
+    if (quesFour > 1) quizOne.push('Chaotic Evil');
+    else quizOne.push('Lawful Good');
     
     event.target.question1.value = '';
     event.target.question2.value = '';
     event.target.question3.value = '';
     event.target.question4.value = '';
     quizzes[0].outputs = quizOne;
+    console.log('quizOne',quizOne);
+    allCharacters[allCharacters.length-1].quizOne = quizOne;
+    console.log('quizOne-out',allCharacters[allCharacters.length-1].quizOne);
     quizzes[0].renderQuizResults();
     quizzes[0].flipVisibility();
   });
@@ -74,6 +77,7 @@ function quizTwoResults() {
     event.target.question5.value = '';
     event.target.question6.value = '';
     quizzes[1].outputs = quizTwo;
+    allCharacters[allCharacters.length-1].quizTwo = quizTwo;
     quizzes[1].renderQuizResults();
     quizzes[1].flipVisibility();
   });
@@ -106,6 +110,7 @@ function quizThreeResults() {
     event.target.question3.value = '';
     event.target.question4.value = '';
     quizzes[2].outputs = quizThree;
+    allCharacters[allCharacters.length-1].quizThree = quizThree;
     quizzes[2].renderQuizResults();
     quizzes[2].flipVisibility();
   });
