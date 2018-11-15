@@ -28,7 +28,6 @@ function quizOneResults() {
     event.target.question3.value = '';
     event.target.question4.value = '';
     quizzes[0].outputs = quizOne;
-    allCharacters[allCharacters.length-1].quizOne = quizOne;
     quizzes[0].renderQuizResults();
     quizzes[0].flipVisibility();
   });
@@ -75,7 +74,6 @@ var quesSix = event.target.question6.value;
     event.target.question5.value = '';
     event.target.question6.value = '';
     quizzes[1].outputs = quizTwo;
-    allCharacters[allCharacters.length-1].quizTwo = quizTwo;
     quizzes[1].renderQuizResults();
     quizzes[1].flipVisibility();
   });
@@ -108,7 +106,6 @@ function quizThreeResults() {
     event.target.question3.value = '';
     event.target.question4.value = '';
     quizzes[2].outputs = quizThree;
-    allCharacters[allCharacters.length-1].quizThree = quizThree;
     console.log('allCharacters after Q3',allCharacters);
     quizzes[2].renderQuizResults();
     quizzes[2].flipVisibility();
