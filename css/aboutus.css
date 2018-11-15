@@ -33,7 +33,7 @@ nav {
 #jasPhoto {
     position: absolute;
     left: 0px;
-    top: 400px;
+    top: 450px;
     width: 100px;
     height: 100px;
    
@@ -44,5 +44,5 @@ nav {
 #jasonContent {
     position: absolute;
     padding-left: 110px;
-    top: 400px;
+    top: 450px;
 }
