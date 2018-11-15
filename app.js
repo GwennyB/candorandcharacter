@@ -27,28 +27,27 @@ function getFromLocalStorage () {
 // load page 'existingcharacter.html', which launches 'existingcharacter.js' and renders with this function
 Character.prototype.renderCharacter = function() { // this will come from query string ('existingcharacter.js') or 'new character' ('newcharacter.js')
   // render this.quizOne[i]
-  var quizOneAnswers = document.getElementById('quizone');
+  var quizOneOutputs = document.getElementById('quizone');
   for (var outputOne in this.quizOne) {
-    quizOneAnswers.childNodes[1+2*outputOne].textContent = this.quizOne[outputOne];
+    quizOneOutputs.childNodes[1+2*outputOne].textContent = this.quizOne[outputOne];
   }
   // render this.quizTwo[i]
-  var quizTwoAnswers = document.getElementById('quiztwo');
+  var quizTwoOutputs = document.getElementById('quiztwo');
   for (var outputTwo in this.quizTwo) {
-    quizTwoAnswers.childNodes[1+2*outputTwo].textContent = this.quizTwo[outputTwo];
+    quizTwoOutputs.childNodes[1+2*outputTwo].textContent = this.quizTwo[outputTwo];
   }
   // render this.quizThree[i]
-  var quizThreeAnswers = document.getElementById('quizthree');
+  var quizThreeOutputs = document.getElementById('quizthree');
   for (var outputThree in this.quizThree) {
-    quizThreeAnswers.childNodes[1+2*outputThree].textContent = this.quizThree[outputThree];
+    quizThreeOutputs.childNodes[1+2*outputThree].textContent = this.quizThree[outputThree];
   }
 };
-
 
 
 // quiz object constructor
 function Quiz (quizNum) {
   this.quizNum = quizNum;
-  this.questions = [];
+  // this.questions = [];
   this.token;
   this.blurbox;
   this.quizForm;
@@ -60,7 +59,9 @@ function Quiz (quizNum) {
 Quiz.prototype.makeToken = function() {
   this.blurbox.style.zIndex = '75';
   this.token.style.zIndex = '100';
-  this.quizForm.style.display = 'none';
+  for (var whichQuiz = 0; whichQuiz < 3; whichQuiz++) {
+    quizzes[whichQuiz].quizForm.style.display = 'none';
+  }
   this.token.addEventListener('click',this.handleToken);
 };
 
@@ -75,32 +76,43 @@ Quiz.prototype.renderQuiz = function() {
   // change display on quiz form and token
   this.token.style.zIndex = '-100';
   this.quizForm.style.display = 'block';
+  console.log('form',this.quizForm);
+  console.log('form display',this.quizForm.style.display);
   this.quizForm.style.zIndex = '100';
-  this.quizForm.addEventListener('submit', this.handleSubmit);
+  // this.quizForm.addEventListener('submit', this.handleSubmit);
+  
+  // push quiz results to this.outputs
+  if (this.quizNum === 0) {
+    this.quizOne = quizOneResults();
+  }
+  if (this.quizNum === 1) {
+    this.quizOne = quizTwoResults();
+  }
+  if (this.quizNum === 2) {
+    this.quizOne = quizThreeResults();
+  }
 };
 
 // quiz submit handler: process inputs into outputs, push to character
-Quiz.prototype.handleSubmit = function(event) {
-  event.preventDefault();
-  var getQuiz = quizzes.find(obj => {return obj.quizForm.textContent === this.textContent});
-  // push quiz results to this.outputs
-  getQuiz.outputs = ['output','output','output','output'];
-  // call 'flipVisibility'
-  getQuiz.flipVisibility();
-};
+// Quiz.prototype.handleSubmit = function(event) {
+//   event.preventDefault();
+//   var getQuiz = quizzes.find(obj => {return obj.quizForm.textContent === this.textContent});
+
+//   // call 'flipVisibility'
+//   getQuiz.flipVisibility();
+// };
 
 // hide token, quiz, and blur box
 Quiz.prototype.flipVisibility = function() {
   // change display on quiz form, blur box
   this.blurbox.style.zIndex = '-100';
   this.quizForm.style.zIndex = '-100';
-  this.renderCharacter();
 };
 
-Quiz.prototype.renderCharacter = function() { // this will come from query string ('existingcharacter.js') or 'new character' ('newcharacter.js')
+Quiz.prototype.renderQuizResults = function() { // this will come from query string ('existingcharacter.js') or 'new character' ('newcharacter.js')
   // render quiz outputs
-  for (var outputs in this.outputs) {
-    this.blurbox.childNodes[1+2*outputs].textContent = this.outputs;
+  for (var whichOutput in this.outputs) {
+    this.blurbox.childNodes[1+2*whichOutput].textContent = this.outputs[whichOutput];
   }
 
   // move to next quiz
