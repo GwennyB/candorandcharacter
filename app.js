@@ -60,7 +60,6 @@ function Quiz (quizNum) {
 // quiz prototype functions:
 // create, place, and activate token
 Quiz.prototype.makeToken = function() {
-  this.blurbox.style.display = 'inline-block';
   this.token.style.display = 'inline-block';
   for (var whichQuiz = 0; whichQuiz < 3; whichQuiz++) {
     quizzes[whichQuiz].quizForm.style.display = 'none';
@@ -105,8 +104,8 @@ Quiz.prototype.renderQuiz = function() {
 // hide token, quiz, and blur box
 Quiz.prototype.flipVisibility = function() {
   // change display on quiz form, blur box
-  this.blurbox.style.block = 'none';
-  this.quizForm.style.block = 'none';
+  this.blurbox.style.backgroundColor = 'transparent';
+  this.quizForm.style.display = 'none';
 };
 
 Quiz.prototype.renderQuizResults = function() { // this will come from query string ('existingcharacter.js') or 'new character' ('newcharacter.js')
