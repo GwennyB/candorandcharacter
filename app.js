@@ -123,7 +123,7 @@ for (var whichOutput in this.outputs) {
     allCharacters[allCharacters.length-1].quizOne = quizzes[0].outputs;
     allCharacters[allCharacters.length-1].quizTwo = quizzes[1].outputs;
     allCharacters[allCharacters.length-1].quizThree = quizzes[2].outputs;
-    allCharacters[allCharacters.length-1].renderURL = 'existingcharacter.html?' + allCharacters[allCharacters.length-1].quizOne[1];  
+    allCharacters[allCharacters.length-1].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter.html?' + allCharacters[allCharacters.length-1].quizOne[1];  
     allCharacters[allCharacters.length-1].sendToLocalStorage();
     alert('Congratulations... you made a character!');
   }
