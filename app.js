@@ -60,8 +60,8 @@ function Quiz (quizNum) {
 // quiz prototype functions:
 // create, place, and activate token
 Quiz.prototype.makeToken = function() {
-  this.blurbox.style.zIndex = '75';
-  this.token.style.zIndex = '100';
+  this.blurbox.style.display = 'inline-block';
+  this.token.style.display = 'inline-block';
   for (var whichQuiz = 0; whichQuiz < 3; whichQuiz++) {
     quizzes[whichQuiz].quizForm.style.display = 'none';
   }
@@ -70,6 +70,7 @@ Quiz.prototype.makeToken = function() {
 
 Quiz.prototype.handleToken = function(event) {
   event.preventDefault();
+  this.style.display = 'none';
   var getQuiz = quizzes.find(obj => {return obj.token.alt === this.alt});
   getQuiz.renderQuiz();
 };
@@ -77,13 +78,7 @@ Quiz.prototype.handleToken = function(event) {
 // token click handler: render quiz
 Quiz.prototype.renderQuiz = function() {
   // change display on quiz form and token
-  this.token.style.zIndex = '-100';
   this.quizForm.style.display = 'block';
-  console.log('form',this.quizForm);
-  console.log('form display',this.quizForm.style.display);
-  this.quizForm.style.zIndex = '100';
-  // this.quizForm.addEventListener('submit', this.handleSubmit);
-  
   // push quiz results to this.outputs
   if (this.quizNum === 0) {
     this.quizOne = quizOneResults();
@@ -110,8 +105,8 @@ Quiz.prototype.renderQuiz = function() {
 // hide token, quiz, and blur box
 Quiz.prototype.flipVisibility = function() {
   // change display on quiz form, blur box
-  this.blurbox.style.zIndex = '-100';
-  this.quizForm.style.zIndex = '-100';
+  this.blurbox.style.block = 'none';
+  this.quizForm.style.block = 'none';
 };
 
 Quiz.prototype.renderQuizResults = function() { // this will come from query string ('existingcharacter.js') or 'new character' ('newcharacter.js')
@@ -124,6 +119,7 @@ Quiz.prototype.renderQuizResults = function() { // this will come from query str
   if (this.quizNum < 2) {
     quizzes[this.quizNum+1].makeToken();
   } else {
+    this.quizForm.style.display = 'none';
     alert('Congratulations... you made a character!');
   }
 };
