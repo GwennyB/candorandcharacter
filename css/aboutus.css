@@ -46,3 +46,19 @@ nav {
     padding-left: 110px;
     top: 450px;
 }
+#guruPhoto {
+    position: absolute;
+    left: 0px;
+    top: 660px;
+    width: 100px;
+    height: 100px;
+   
+    padding-left: 5px;
+    padding-right: 0px;
+}
+#guruContent {
+    position: relative;
+    padding-left: 110px;
+    top: 312px;
+    margin-bottom: 170px;
+}
