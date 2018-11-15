@@ -1,19 +1,11 @@
 #wotc {
     position: absolute;
-    top: 75px;
-    width: 1325px;
-}
-
-#wotcdiv {
-    position: absolute;
     text-align: center;
+    width: 1300px;
+    top: 95px;
+    left: 25px;
 }
 
-.formup {
-    position: static;
-    top: 500px;
-
-}
 #quizone {
     position: absolute;
     top: 170px;
