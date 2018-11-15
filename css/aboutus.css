@@ -1,5 +1,5 @@
 main {
-    padding-top: 100px;
+    padding-top: 65px;
 }
 
 h2 {
@@ -12,4 +12,17 @@ h2 {
 p {
     color: thistle;
     font-size: 18px;
+}
+
+#andrewPhoto {
+    width: 100px;
+    height: auto;
+    float: left;
+    padding-left: 5px;
+    padding-right: 0px;
+}
+
+#andrewContent {
+    position: absolute;
+    padding-left: 110px;
 }
