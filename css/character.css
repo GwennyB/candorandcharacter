@@ -17,12 +17,11 @@
    background-color: crimson;
    opacity: .9;
    z-index: 50;
+   font-weight: bold;
+   font-size: 20px; 
+   align-content: center;
 }
-#diceone, #dicetwo, #dicethree {
-    z-index: 100;
-    width: 100px;
-    margin-top: 50px;
-}
+
 
 #quiztwo {
     position: absolute;
@@ -33,19 +32,49 @@
     background-color: darkgrey;
     opacity: .9;
     z-index: 50;
+    font-weight: bold;
+   font-size: 20px;
+   align-content: left;
+}
+
+#quiztwo label input{
+    display: block;
+    text-align: left;
+    margin-left: 20px
+}
+#quizthree label input{
+    display: block;
+    text-align: left;
 }
 
 #quizthree {
     position: absolute;
     top: 345px;
-    height: 325px;
+    height: 335px;
     left: 560px;
     width: 400px;
     background-color: lightblue;
     opacity: .9;
     z-index: 50;
+    font-weight: bold;
+   font-size: 15px; 
 }
 
 body {
     background-image: none;
+}
+input {
+    margin-bottom: 3px;
+}
+
+#diceone, #dicetwo, #dicethree {
+    z-index: 100;
+    width: 100px;
+    margin-top: 50px;
+}
+h1{
+    margin-bottom: 10px;
+}
+#quizthree input{
+    margin-left: 125px;
 }
