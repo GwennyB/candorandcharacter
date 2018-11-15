@@ -1,9 +1,11 @@
 #wotc {
     position: absolute;
     text-align: center;
-    width: 1300px;
+    width: 1366px;
     top: 95px;
-    left: 25px;
+    left: 75px;
+    z-index: 0;
+    margin-bottom: 100px;
 }
 
 #quizone {
@@ -28,4 +30,7 @@
     height: 240px;
     left: 500px;
     width: 340px;
+}
+body {
+    background-image: none;
 }
