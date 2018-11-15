@@ -153,6 +153,7 @@ input {
 
 #diceone, #dicetwo, #dicethree {
     z-index: 100;
+    display: none;
     width: 100px;
     margin-top: 50px;
 }

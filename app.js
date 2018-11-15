@@ -81,21 +81,22 @@ Quiz.prototype.renderQuiz = function() {
   // push quiz results to this.outputs
   if (this.quizNum === 0) {
     this.quizOne = quizOneResults();
+    console.log('renderQuiz-1',quizOneResults);
   }
   if (this.quizNum === 1) {
-    this.quizOne = quizTwoResults();
+    this.quizTwo = quizTwoResults();
+    console.log('renderQuiz-2',quizTwoResults);
   }
   if (this.quizNum === 2) {
-    this.quizOne = quizThreeResults();
-    allCharacters[allCharacters.length-1].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter.html?' + allCharacters[allCharacters.length-1].quizOne[1]; 
-    allCharacters[allCharacters.length-1].sendToLocalStorage();
+    this.quizThree = quizThreeResults();
+    console.log('renderQuiz-3',quizThreeResults);
   }
 };
 
 // quiz submit handler: process inputs into outputs, push to character
 // Quiz.prototype.handleSubmit = function(event) {
-//   event.preventDefault();
-//   var getQuiz = quizzes.find(obj => {return obj.quizForm.textContent === this.textContent});
+  //   event.preventDefault();
+  //   var getQuiz = quizzes.find(obj => {return obj.quizForm.textContent === this.textContent});
 
 //   // call 'flipVisibility'
 //   getQuiz.flipVisibility();
@@ -109,16 +110,21 @@ Quiz.prototype.flipVisibility = function() {
 };
 
 Quiz.prototype.renderQuizResults = function() { // this will come from query string ('existingcharacter.js') or 'new character' ('newcharacter.js')
-  // render quiz outputs
-  for (var whichOutput in this.outputs) {
-    this.blurbox.childNodes[1+2*whichOutput].textContent = this.outputs[whichOutput];
+// render quiz outputs
+for (var whichOutput in this.outputs) {
+  this.blurbox.childNodes[1+2*whichOutput].textContent = this.outputs[whichOutput];
   }
-
+  
   // move to next quiz
   if (this.quizNum < 2) {
     quizzes[this.quizNum+1].makeToken();
   } else {
     this.quizForm.style.display = 'none';
+    allCharacters[allCharacters.length-1].renderURL = 'existingcharacter.html?' + allCharacters[allCharacters.length-1].quizOne[1];  //https://gwennyb.github.io/candorandcharacter/
+    allCharacters[allCharacters.length-1].quizOne = quizzes[0].outputs;
+    allCharacters[allCharacters.length-1].quizTwo = quizzes[1].outputs;
+    allCharacters[allCharacters.length-1].quizThree = quizzes[2].outputs;
+    allCharacters[allCharacters.length-1].sendToLocalStorage();
     alert('Congratulations... you made a character!');
   }
 };

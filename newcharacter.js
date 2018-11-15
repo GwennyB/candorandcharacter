@@ -30,5 +30,4 @@ for (var newQuiz = 0; newQuiz < 3; newQuiz++) {
 
 // PROTO: show and activate listener on 1st quiz
 
-quizzes[0].token.zIndex = '1000';
 quizzes[0].makeToken();
