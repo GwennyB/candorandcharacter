@@ -28,9 +28,7 @@ function quizOneResults() {
     event.target.question3.value = '';
     event.target.question4.value = '';
     quizzes[0].outputs = quizOne;
-    console.log('quizOne',quizOne);
     allCharacters[allCharacters.length-1].quizOne = quizOne;
-    console.log('quizOne-out',allCharacters[allCharacters.length-1].quizOne);
     quizzes[0].renderQuizResults();
     quizzes[0].flipVisibility();
   });
@@ -67,9 +65,9 @@ function quizTwoResults() {
     var quesFive = event.target.question5.value;
     quizTwo.push(quesFive);
 //One a scale from 1 to 10, how much swag do you have?
-    var quesSix = event.target.question6.value;
+var quesSix = event.target.question6.value;
     quizTwo.push(quesSix);
-
+    
     event.target.question1.value = '';
     event.target.question2.value = '';
     event.target.question3.value = '';
@@ -111,6 +109,7 @@ function quizThreeResults() {
     event.target.question4.value = '';
     quizzes[2].outputs = quizThree;
     allCharacters[allCharacters.length-1].quizThree = quizThree;
+    console.log('allCharacters after Q3',allCharacters);
     quizzes[2].renderQuizResults();
     quizzes[2].flipVisibility();
   });
