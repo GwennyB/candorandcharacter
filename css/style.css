@@ -9,7 +9,7 @@ header, footer {
   
 header {
     top: 0;
-    z-index: +1;
+    z-index: 100;
 }
 
 header h1 {
@@ -20,6 +20,7 @@ header h1 {
 
 footer{
     bottom: 0;
+    z-index: 100;
 }
 
 body {

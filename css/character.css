@@ -1,31 +1,54 @@
 #wotc {
     position: absolute;
     text-align: center;
-    width: 1300px;
+    width: 1366px;
     top: 95px;
-    left: 25px;
+    left: 75px;
+    z-index: 0;
+    margin-bottom: 100px;
 }
 
 #quizone {
     position: absolute;
-    top: 170px;
-    left: 120px;
-    height: 125px;
-    width: 1100px;
+    top: 110px;
+    left: 125px;
+    height: 225px;
+    width: 1260px;
+   background-color: crimson;
+   opacity: .9;
+   z-index: 50;
+}
+#quizone img{
+    z-index: 100;
 }
 
 #quiztwo {
     position: absolute;
-    top: 465px;
-    left: 110px;
-    height: 820px;
-    width: 20px;
+    top: 345px;
+    left: 125px;
+    height: 1060px;
+    width: 425px;
+    background-color: darkgrey;
+    opacity: .9;
+    z-index: 50;
+}
+#quiztwo img{
+    z-index: 100;
 }
 
 #quizthree {
     position: absolute;
-    top: 371px;
-    height: 240px;
-    left: 500px;
-    width: 340px;
+    top: 345px;
+    height: 325px;
+    left: 560px;
+    width: 400px;
+    background-color: lightblue;
+    opacity: .9;
+    z-index: 50;
+}
+#quizthree img{
+    z-index: 100;
+}
+body {
+    background-image: none;
 }
