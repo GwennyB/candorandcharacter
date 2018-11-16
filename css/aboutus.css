@@ -1,80 +1,93 @@
 main {
-    margin: 175px 20px;
-    
+    margin: 175px 30px auto 30px;
+    /* padding-bottom: 50px; */
 }
 
 h2 {
     font-size: 34px;
     text-decoration: underline;
-    color: thistle;
-    padding: 25px;
+    color: lightskyblue;
+    padding: 50px 0px 40px 0px;
+}
+
+#intro p {
+    padding: 0px 40px 75px 40px;
 }
 
 p {
-    color: thistle;
+    color: lightskyblue;
     font-size: 18px;
     /* margin: 10px 30px 10px 30px; */
 }
 
-* {
-    /* outline: 0.5px solid white; */
-}
+/* * {
+    outline: 0.5px solid white;
+} */
 
 #andrew, #jason, #guru, #gwen {
-    margin: auto 25px;
+    margin: auto 30px;
 }
 
-#andrewContent {
+#andrewContent, #guruContent {
     float: right;
     height: 200px;
-    width: 1100px;
-    margin: 20px 20px;
+    width: 1115px;
+    margin: 10px;
+    /* border: 1px solid slategray; */
+    /* padding: 10px; */
 }
 
-#andrewPhoto {
+#andrewPhoto, #guruPhoto {
     float: left;
     height: 200px;
-    margin: 20px 20px;
+    margin: 10px;
 }
 
-#jasonContent {
+#jasonContent, #gwenContent {
     float: left;
     height: 200px;
-    width: 1100px;
-    margin: 20px 20px;
+    width: 1115px;
+    margin: 10px;
+    /* border: 1px solid slategray; */
+    /* padding: 10px; */
 }    
 
-#jasPhoto {
+#jasPhoto, #gwenPhoto {
     float: right;
     height: 200px;
-    margin: 20px 20px;
+    margin: 10px;
 }
 
-#guruContent {
+/* #guruContent {
     float: right;
     height: 200px;
-    width: 1100px;
+    width: 1080px;
     margin: 20px 20px;
     height: 240px;
-}    
+}     */
 
-#guruPhoto {
+/* #guruPhoto {
     float: left;
     height: 200px;
     margin: 20px 20px;
-}
+} */
 
-#gwenContent {
+/* #gwenContent {
     float: left;
     height: 200px;
-    width: 1100px;
+    width: 1080px;
     margin: 20px 20px;
+    padding-bottom: 100px;
 }    
 
 #gwenPhoto {
     float: right;
     height: 200px;
     margin: 20px 20px;
+} */
+
+#gwenContent, #gwenPhoto {
+    margin-bottom: 100px;
 }
 
 nav {
