@@ -1,7 +1,7 @@
 header, footer {
     color:rgb(12, 12, 12);
-    position: fixed;
     width: 100%;
+    position: fixed;
     background-color: rgb(59, 56, 241);
     left: 0;
     height: 75px;

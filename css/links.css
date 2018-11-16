@@ -1,25 +1,48 @@
-main {
-    padding-top: 65px;
+* {
+    /* outline: 0.5px solid white; */
 }
 
 main {
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 .pageLinks {
     text-decoration: underline;
-    color: thistle;
+    color: lightskyblue;
     font-size: 30px;
     padding: 20px;
     font-weight: bold;
 }
 
 .linkContent {
-    color: #FFFFFF;
+    color: lightskyblue;
     text-decoration: none;
-    color: thistle;
     font-size: 15px;
     font-weight: 200;
+}
+
+:link {
+    color: lightskyblue;
+}
+
+:visited {
+    color: lightslategray;
+}
+
+li {
+    margin: 0px 0px 0px 0px;
+}
+
+
+main div {
+    margin: 25px 0px;
+    text-align: left;
+    padding-left: 75px;
+}
+
+li p {
+    text-align: left;
+    padding-left: 50px;
 }
 
 nav {

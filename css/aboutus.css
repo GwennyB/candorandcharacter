@@ -1,64 +1,96 @@
 main {
-    padding-top: 150px;
+    margin: 175px 30px auto 30px;
+    /* padding-bottom: 50px; */
 }
 
 h2 {
     font-size: 34px;
     text-decoration: underline;
-    color: thistle;
-    padding: 15px;
+    color: lightskyblue;
+    padding: 50px 0px 40px 0px;
+}
+
+#intro p {
+    padding: 0px 40px 75px 40px;
 }
 
 p {
-    color: thistle;
+    color: lightskyblue;
     font-size: 18px;
+    /* margin: 10px 30px 10px 30px; */
 }
 
-#andrewPhoto {
-    width: 100px;
-    height: auto;
+/* * {
+    outline: 0.5px solid white;
+} */
+
+#andrew, #jason, #guru, #gwen {
+    margin: auto 30px;
+}
+
+#andrewContent, #guruContent {
+    float: right;
+    height: 200px;
+    width: 1115px;
+    margin: 10px;
+    /* border: 1px solid slategray; */
+    /* padding: 10px; */
+}
+
+#andrewPhoto, #guruPhoto {
     float: left;
-    padding-left: 5px;
-    padding-right: 0px;
+    height: 200px;
+    margin: 10px;
 }
 
-#andrewContent {
-    position: absolute;
-    padding-left: 110px;
+#jasonContent, #gwenContent {
+    float: left;
+    height: 200px;
+    width: 1115px;
+    margin: 10px;
+    /* border: 1px solid slategray; */
+    /* padding: 10px; */
+}    
+
+#jasPhoto, #gwenPhoto {
+    float: right;
+    height: 200px;
+    margin: 10px;
+}
+
+/* #guruContent {
+    float: right;
+    height: 200px;
+    width: 1080px;
+    margin: 20px 20px;
+    height: 240px;
+}     */
+
+/* #guruPhoto {
+    float: left;
+    height: 200px;
+    margin: 20px 20px;
+} */
+
+/* #gwenContent {
+    float: left;
+    height: 200px;
+    width: 1080px;
+    margin: 20px 20px;
+    padding-bottom: 100px;
+}    
+
+#gwenPhoto {
+    float: right;
+    height: 200px;
+    margin: 20px 20px;
+} */
+
+#gwenContent, #gwenPhoto {
+    margin-bottom: 100px;
 }
 
 nav {
-    padding: 15px 0px;
-}
-#jasPhoto {
-    position: absolute;
-    left: 0px;
-    top: 450px;
-    width: 100px;
-    height: 100px;
-   
-    padding-left: 5px;
-    padding-right: 0px;
+  padding: 15px 0px;
 }
 
-#jasonContent {
-    position: absolute;
-    padding-left: 110px;
-    top: 450px;
-}
-#guruPhoto {
-    position: absolute;
-    left: 0px;
-    top: 660px;
-    width: 100px;
-    height: 100px;
-   
-    padding-left: 5px;
-    padding-right: 0px;
-}
-#guruContent {
-    position: relative;
-    padding-left: 110px;
-    top: 312px;
-    margin-bottom: 170px;
-}
