@@ -21,17 +21,17 @@ function prepopulate () {
   allCharacters[0].quizThree = ['8','2','2','28'];
   allCharacters[0].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter.html?' + allCharacters[0].quizOne[1];
   // define Jason's character
-  allCharacters[1].quizOne = ['Jason', 'Ludo', 'race', 'Lawful Good'];
+  allCharacters[1].quizOne = ['Jason', 'Ludo', 'Half Orc', 'Lawful Good'];
   allCharacters[1].quizTwo = ['5','7','6','4','10','8'];
   allCharacters[1].quizThree = ['4','4','3','115'];
   allCharacters[1].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter.html?' + allCharacters[1].quizOne[1];
   // define Guru's character
-  allCharacters[2].quizOne = ['Guru', 'Didymus', 'race', 'Chaotic Evil'];
+  allCharacters[2].quizOne = ['Guru', 'Didymus', 'Elf', 'Chaotic Evil'];
   allCharacters[2].quizTwo = ['3','10','9','6','10','7'];
   allCharacters[2].quizThree = ['6','6','5','2'];
   allCharacters[2].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter.html?' + allCharacters[2].quizOne[1];
   // define Andrew's character
-  allCharacters[3].quizOne = ['Andrew', 'Ambrosius', 'race', 'Lawful Good'];
+  allCharacters[3].quizOne = ['Andrew', 'Ambrosius', 'Human', 'Lawful Good'];
   allCharacters[3].quizTwo = ['7','3','4','10','10','9'];
   allCharacters[3].quizThree = ['7','4','1','45'];
   allCharacters[3].renderURL = 'https://gwennyb.github.io/candorandcharacter/existingcharacter.html?' + allCharacters[3].quizOne[1];
